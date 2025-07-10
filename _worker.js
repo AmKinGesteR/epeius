@@ -1,7 +1,7 @@
 
 import { connect } from "cloudflare:sockets";
 
-let password = '?=24;--@TheRainIsHere--@TheRainIsHere--@TheRainIsHere--@TheRainIsHere--@TheRainIsHere--';
+let password = '@TheRainIsHere';
 let proxyIP = 'proxyip.cmliussss.net:443';
 let DNS64Server = '';
 //let sub = '';
@@ -22,13 +22,19 @@ let go2Socks5s = [
     '*cloudatacdn.com',
     '*.loadshare.org',
 ];
-let addresses = [];
+let addresses = [
+	//当sub为空时启用本地优选域名/优选IP
+	'www.visa.com.sg#官方优选域名',
+	'www.wto.org:8443#官方优选域名',
+	'visa.cn:2087',
+	'icook.hk',
+];
 let addressesapi = [];
 let addressescsv = [];
 let DLS = 8;
 let remarkIndex = 1;//CSV备注所在列偏移量
 let FileName = 'epeius';
-let BotToken = '';
+let BotToken = '7707371463:AAHc6OlahEbqo4nfB4WZjx1HBUShqJ_AaHk';
 let ChatID = '';
 let proxyhosts = [];
 let proxyhostsURL = '';
